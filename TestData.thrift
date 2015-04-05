@@ -1,3 +1,4 @@
+
 enum RoomStatus {
   Clean,
   Unclean
