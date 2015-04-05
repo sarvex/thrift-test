@@ -1,23 +1,22 @@
 enum RoomStatus {
-  Clean,
-  Unclean
+  1:Clean,
+  2:Unclean
 }
 
 struct Room{
-  string id;
-  string name;
-  RoomStatus status;
+  1:string id;
+  2:string name;
+  3:RoomStatus status;
 }
 
 enum EventType {
-  Backyard,
-  World
+  1:Backyard,
+  2:World
 }
 
-struct Event{
-  i32 id,
-  EvenType type,
-  list<string> data,
-  string created_at,
-  string modified_At
+struct Event {
+  1:string id,
+  2:EvenType eventType,
+  3:string createdAt,
+  4:string modifiedAt
 }
